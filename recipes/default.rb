@@ -1,11 +1,11 @@
+include_recipe "libapr"
+include_recipe "libaprutil"
+include_recipe "libssl"
+
 packages = Array.new
 
 case node[:lsb][:codename]
-when "lucid"
-  packages |= %w/
-    apache2-utils
-  /
-when "precise"
+when "lucid", "precise"
   packages |= %w/
     apache2-utils
   /
