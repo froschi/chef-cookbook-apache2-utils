@@ -8,5 +8,5 @@ version          "0.0.1"
 %w/ubuntu/.each { |os| supports os }
 
 depends          "libapr", ">= 0.0.1"
-depends          "libaprutils", ">= 0.0.1"
+depends          "libaprutil", ">= 0.0.1"
 depends          "libssl", ">= 0.0.1"
